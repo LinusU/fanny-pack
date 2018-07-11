@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "lib": ["es2015", "esnext.asynciterable"],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "target": "es2015",
+    "strict": true
+  }
+}

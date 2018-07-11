@@ -1,0 +1,34 @@
+{
+  "name": "@fanny-pack/node",
+  "version": "0.0.0",
+  "license": "MIT",
+  "repository": "LinusU/fanny-pack",
+  "main": "build/index.js",
+  "typings": "build/index.d.ts",
+  "files": [
+    "build/index.js",
+    "build/index.d.ts"
+  ],
+  "scripts": {
+    "test": "npm run prepare && node build/test",
+    "prepare": "tsc"
+  },
+  "dependencies": {
+    "@fanny-pack/core": "^0.0.0",
+    "leveldown": "^4.0.1",
+    "pifi": "^1.1.1"
+  },
+  "devDependencies": {
+    "@fanny-pack/test": "^0.0.0",
+    "@types/leveldown": "^1.7.0",
+    "@types/node": "^10.5.2",
+    "fs-temp": "^1.1.2",
+    "typescript": "^2.9.2"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

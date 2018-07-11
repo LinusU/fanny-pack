@@ -1,0 +1,33 @@
+{
+  "name": "@fanny-pack/browser",
+  "version": "0.0.0",
+  "license": "MIT",
+  "repository": "LinusU/fanny-pack",
+  "main": "build/index.js",
+  "typings": "build/index.d.ts",
+  "files": [
+    "build/index.js",
+    "build/index.d.ts"
+  ],
+  "scripts": {
+    "test": "npm run prepare && electron-mocha --renderer build/test",
+    "prepare": "tsc"
+  },
+  "dependencies": {
+    "@fanny-pack/core": "^0.0.0",
+    "unwrap-async-iterable-iterator-promise": "^1.0.1"
+  },
+  "devDependencies": {
+    "@fanny-pack/test": "^0.0.0",
+    "@types/node": "^10.5.2",
+    "electron": "^2.0.4",
+    "electron-mocha": "^6.0.4",
+    "typescript": "^2.9.2"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

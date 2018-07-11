@@ -1,0 +1,38 @@
+{
+  "name": "@fanny-pack/react-native",
+  "version": "0.0.0",
+  "license": "MIT",
+  "repository": "LinusU/fanny-pack",
+  "main": "build/index.js",
+  "typings": "build/index.d.ts",
+  "files": [
+    "build/index.js",
+    "build/index.d.ts"
+  ],
+  "scripts": {
+    "test": "npm run prepare && node build/test",
+    "prepare": "tsc"
+  },
+  "dependencies": {
+    "@fanny-pack/core": "^0.0.0",
+    "ts-mutex": "^1.0.0",
+    "unwrap-async-iterable-iterator-promise": "^1.0.1"
+  },
+  "devDependencies": {
+    "@fanny-pack/test": "^0.0.0",
+    "@types/proxyquire": "^1.3.28",
+    "@types/react-native": "^0.56.0",
+    "mock-async-storage": "^2.0.2",
+    "proxyquire": "^2.0.1",
+    "typescript": "^2.9.2"
+  },
+  "peerDependencies": {
+    "react-native": ">=0.52.0"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

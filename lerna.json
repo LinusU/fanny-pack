@@ -1,0 +1,13 @@
+{
+  "command": {
+    "publish": {
+      "allowBranch": "master",
+      "message": "🚢 %s"
+    }
+  },
+  "lerna": "2.11.0",
+  "packages": [
+    "packages/*"
+  ],
+  "version": "0.0.0"
+}
