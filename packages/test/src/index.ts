@@ -117,6 +117,34 @@ function test (fp: FannyPack, runner: test.TestRunner = defaultRunner()) {
     await fp.delete('a')
   })
 
+  runner.addTest('.delete() - keys', async () => {
+    await fp.set('a', '1')
+    await fp.set('b', '2')
+    await fp.set('c', '3')
+    await fp.set('d', '4')
+    await fp.set('e', '5')
+    await fp.set('f', '6')
+    await fp.set('g', '7')
+    await fp.set('h', '8')
+    await fp.set('i', '9')
+    await fp.set('j', '0')
+
+    for await (const key of fp.keys()) {
+      await fp.delete(key)
+    }
+
+    assert.strictEqual(await fp.has('a'), false)
+    assert.strictEqual(await fp.has('b'), false)
+    assert.strictEqual(await fp.has('c'), false)
+    assert.strictEqual(await fp.has('d'), false)
+    assert.strictEqual(await fp.has('e'), false)
+    assert.strictEqual(await fp.has('f'), false)
+    assert.strictEqual(await fp.has('g'), false)
+    assert.strictEqual(await fp.has('h'), false)
+    assert.strictEqual(await fp.has('i'), false)
+    assert.strictEqual(await fp.has('j'), false)
+  })
+
   runner.addTest('.keys() - basics', async () => {
     await fp.set('a', '1')
     await fp.set('b', '2')
