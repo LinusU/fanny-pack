@@ -33,7 +33,7 @@ console.log(await fp.get('c'))
 console.log(await fp.get('d'))
 //=> undefined
 
-/*** Check Precense ***/
+/*** Check Presence ***/
 console.log(await fp.has('c'))
 //=> true
 
