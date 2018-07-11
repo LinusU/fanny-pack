@@ -1,6 +1,6 @@
 {
   "name": "@fanny-pack/memory",
-  "version": "0.0.0",
+  "version": "1.0.0-beta.1",
   "license": "MIT",
   "repository": "LinusU/fanny-pack",
   "main": "build/index.js",
@@ -14,10 +14,10 @@
     "prepare": "tsc"
   },
   "dependencies": {
-    "@fanny-pack/core": "^0.0.0"
+    "@fanny-pack/core": "1.0.0-beta.1"
   },
   "devDependencies": {
-    "@fanny-pack/test": "^0.0.0",
+    "@fanny-pack/test": "1.0.0-beta.1",
     "@types/node": "^10.5.2",
     "typescript": "^2.9.2"
   },
