@@ -10,6 +10,7 @@ Fanny Pack is a non-fancy, but very practical, key/value-store.
 ## Platforms
 
 - [`@fanny-pack/browser`](https://github.com/LinusU/fanny-pack/tree/master/packages/browser)
+- [`@fanny-pack/browser-extension`](https://github.com/LinusU/fanny-pack/tree/master/packages/browser-extension)
 - [`@fanny-pack/memory`](https://github.com/LinusU/fanny-pack/tree/master/packages/memory)
 - [`@fanny-pack/node`](https://github.com/LinusU/fanny-pack/tree/master/packages/node)
 - [`@fanny-pack/react-native`](https://github.com/LinusU/fanny-pack/tree/master/packages/react-native)

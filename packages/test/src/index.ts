@@ -1,4 +1,3 @@
-import Mocha = require('mocha')
 import assert = require('assert')
 
 import { FannyPack } from '@fanny-pack/core'
@@ -19,25 +18,7 @@ async function assertYields<T> (iterator: AsyncIterableIterator<T>, expected: T[
   assert.deepStrictEqual(await iterator.next(), { done: true, value: undefined })
 }
 
-function defaultRunner (): test.TestRunner {
-  const mocha = new Mocha()
-
-  return {
-    addTest (name, fn) {
-      mocha.suite.addTest(new Mocha.Test(name, fn))
-    },
-    afterEach (name, fn) {
-      mocha.suite.afterEach(name, fn)
-    },
-    run () {
-      mocha.run((failures) => {
-        process.exitCode = failures ? 1 : 0
-      })
-    }
-  }
-}
-
-function test (fp: FannyPack, runner: test.TestRunner = defaultRunner()) {
+function test (fp: FannyPack, runner: test.TestRunner) {
   runner.afterEach('Clear Data', () => fp.clear())
 
   runner.addTest('.set()', async () => {

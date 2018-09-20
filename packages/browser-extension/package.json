@@ -1,0 +1,33 @@
+{
+  "name": "@fanny-pack/browser-extension",
+  "version": "0.0.0",
+  "license": "MIT",
+  "repository": "LinusU/fanny-pack",
+  "main": "build/index.js",
+  "typings": "build/index.d.ts",
+  "files": [
+    "build/index.js",
+    "build/index.d.ts"
+  ],
+  "scripts": {
+    "test": "npm run prepare && wext-test --permission=storage build/test.js | tap-mocha-reporter spec",
+    "prepare": "tsc"
+  },
+  "dependencies": {
+    "@fanny-pack/core": "1.0.0-beta.1",
+    "@wext/storage": "^0.1.0"
+  },
+  "devDependencies": {
+    "@fanny-pack/test": "1.0.0-beta.1",
+    "@types/node": "^10.5.2",
+    "@wext/test": "^0.1.1",
+    "tap-mocha-reporter": "^3.0.7",
+    "typescript": "^2.9.2"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
