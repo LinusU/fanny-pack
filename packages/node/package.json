@@ -1,6 +1,6 @@
 {
   "name": "@fanny-pack/node",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0-beta.2",
   "license": "MIT",
   "repository": "LinusU/fanny-pack",
   "main": "build/index.js",
@@ -14,12 +14,12 @@
     "prepare": "tsc"
   },
   "dependencies": {
-    "@fanny-pack/core": "1.0.0-beta.1",
+    "@fanny-pack/core": "^1.0.0-beta.2",
     "leveldown": "^4.0.1",
     "pifi": "^1.1.1"
   },
   "devDependencies": {
-    "@fanny-pack/test": "1.0.0-beta.1",
+    "@fanny-pack/test": "^1.0.0-beta.2",
     "@types/leveldown": "^1.7.0",
     "@types/node": "^10.5.2",
     "fs-temp": "^1.1.2",

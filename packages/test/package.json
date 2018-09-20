@@ -1,6 +1,6 @@
 {
   "name": "@fanny-pack/test",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0-beta.2",
   "license": "MIT",
   "repository": "LinusU/fanny-pack",
   "main": "build/index.js",
@@ -14,7 +14,7 @@
     "prepare": "tsc"
   },
   "dependencies": {
-    "@fanny-pack/core": "1.0.0-beta.1",
+    "@fanny-pack/core": "^1.0.0-beta.2",
     "mocha": "^5.2.0"
   },
   "devDependencies": {

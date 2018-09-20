@@ -1,6 +1,6 @@
 {
   "name": "@fanny-pack/browser-extension",
-  "version": "0.0.0",
+  "version": "1.0.0-beta.2",
   "license": "MIT",
   "repository": "LinusU/fanny-pack",
   "main": "build/index.js",
@@ -14,11 +14,11 @@
     "prepare": "tsc"
   },
   "dependencies": {
-    "@fanny-pack/core": "1.0.0-beta.1",
+    "@fanny-pack/core": "^1.0.0-beta.2",
     "@wext/storage": "^0.1.0"
   },
   "devDependencies": {
-    "@fanny-pack/test": "1.0.0-beta.1",
+    "@fanny-pack/test": "^1.0.0-beta.2",
     "@types/node": "^10.5.2",
     "@wext/test": "^0.1.1",
     "tap-mocha-reporter": "^3.0.7",
